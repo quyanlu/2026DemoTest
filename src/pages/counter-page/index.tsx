@@ -1,39 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
+import Counter from '../../components/counter';
+import './index.scss';
 
-function Counter() {
-  const [count, setCount] = useState(0);
+interface CounterPageProps {}
 
-  const increment = () => {
-    setCount(count + 1);
-  };
-
-  const decrement = () => {
-    setCount(count - 1);
-  };
-
-  const reset = () => {
-    setCount(0);
-  };
-
+const CounterPage: React.FC<CounterPageProps> = () => {
   return (
-    <div className="counter">
-      <h2>计数器</h2>
-      <div className="counter-display">
-        <h3>{count}</h3>
-      </div>
-      <div className="counter-controls">
-        <button onClick={increment} className="btn btn-primary">
-          +
-        </button>
-        <button onClick={decrement} className="btn btn-secondary">
-          -
-        </button>
-        <button onClick={reset} className="btn btn-reset">
-          重置
-        </button>
-      </div>
+    <div className="page">
+      <h2>计数器演示</h2>
+      <Counter />
     </div>
   );
-}
+};
 
-export default Counter;
+export default CounterPage;
