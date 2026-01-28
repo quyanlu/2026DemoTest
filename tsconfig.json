@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    /* 编译目标 */
+    "target": "es5", // 编译输出的JavaScript版本，设置为ES5以兼容更多浏览器
+    
+    /* 库文件 */
+    "lib": ["dom", "dom.iterable", "esnext"], // 编译时包含的库文件，包括DOM、DOM可迭代对象和ESNext特性
+    
+    /* JavaScript支持 */
+    "allowJs": true, // 允许编译JavaScript文件
+    
+    /* 类型检查 */
+    "skipLibCheck": true, // 跳过对库文件的类型检查，提高编译速度
+    
+    /* 模块系统 */
+    "esModuleInterop": true, // 启用ES模块互操作性，允许CommonJS模块使用import语法
+    "allowSyntheticDefaultImports": true, // 允许从没有默认导出的模块进行默认导入
+    
+    /* 严格模式 */
+    "strict": true, // 启用所有严格类型检查选项
+    
+    /* 代码质量 */
+    "forceConsistentCasingInFileNames": true, // 强制文件名大小写一致，避免跨平台问题
+    "noFallthroughCasesInSwitch": true, // 禁止switch语句中的case穿透
+    
+    /* 模块解析 */
+    "module": "esnext", // 生成的模块代码格式
+    "moduleResolution": "node", // 模块解析策略，使用Node.js风格
+    
+    /* 其他选项 */
+    "resolveJsonModule": true, // 允许导入JSON文件
+    "isolatedModules": true, // 每个文件都被视为独立模块
+    "noEmit": false, // 允许TypeScript编译器生成输出文件
+    
+    /* JSX处理 */
+    "jsx": "react-jsx" // JSX转换模式，使用React 17+的新JSX转换
+  },
+  
+  /* 包含的文件 */
+  "include": ["src"] // 指定需要编译的文件或目录
+}
+
