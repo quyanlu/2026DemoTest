@@ -1,0 +1,20 @@
+.virtual-list-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    .virtual-list-fixed-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        .virtual-list-fixed-item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+}

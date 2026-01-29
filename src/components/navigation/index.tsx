@@ -16,6 +16,10 @@ const Navigation: React.FC<NavigationProps> = () => {
       to: '/todo-list',
       label: '待办事项',
     },
+    {
+      to: '/virtual-dom',
+      label: '虚拟列表固定高度',
+    },
   ];
   return (
     <nav className="navigation">
