@@ -20,6 +20,10 @@ const Navigation: React.FC<NavigationProps> = () => {
       to: '/virtual-dom',
       label: '虚拟列表固定高度',
     },
+    {
+      to: '/traditional-virtual-dom',
+      label: '传统虚拟列表固定高度',
+    },
   ];
   return (
     <nav className="navigation">

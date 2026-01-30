@@ -1,0 +1,23 @@
+// src/components/virtual-list-hooks/index.scss
+.virtual-list-hooks {
+  position: relative;
+  overflow: auto;
+  
+  .virtual-list-hooks-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    .virtual-list-hooks-visible {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      
+      .virtual-list-hooks-item {
+        position: relative;
+        width: 100%;
+      }
+    }
+  }
+}
